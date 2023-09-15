@@ -6,9 +6,16 @@ const AccessDeniedError = require('../errors/AccessDeniedError');
 
 // Получение всех фильмов
 const getMovies = (req, res, next) => {
-  Movie.find({}).sort({ createdAt: -1 })
-    .then((cards) => res.status(200).send(cards))
-    .catch((err) => next(err));
+  const owner = req.user._id;
+
+  Movie.find({ owner })
+    .then((movies) => {
+      if (!movies || movies.length === 0) {
+        throw new NotFoundError('Фильмы не найдены');
+      }
+      return res.send(movies);
+    })
+    .catch(next);
 };
 
 // Создание
