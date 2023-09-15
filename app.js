@@ -16,6 +16,10 @@ mongoose.connect(DB_URL, {
   useNewUrlParser: true,
 });
 const allowedOrigins = [
+  'https://kate0109.nomoredomainsicu.ru',
+  'https://api.kate0109.nomoredomainsicu.ru',
+  'http://kate0109.nomoredomainsicu.ru',
+  'http://api.kate0109.nomoredomainsicu.ru',
   'localhost:3000',
 ];
 
