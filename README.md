@@ -1,6 +1,5 @@
 # movies-explorer-api
 
-# react-mesto-api-full
 Репозиторий для приложения проекта `Movies`, включающий  бэкенд часть приложения со следующими возможностями: авторизации и регистрации пользователей, операции с фильмами и пользователями.  
   
 
@@ -9,5 +8,9 @@
 
 ## Ссылки на проект
 
-IP 
-Backend 
+IP 158.160.75.132
+
+Frontend https://kate0109.nomoredomainsicu.ru/
+
+Backend https://api.kate0109.nomoredomainsicu.ru/
+
