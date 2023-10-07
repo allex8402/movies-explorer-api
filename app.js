@@ -20,7 +20,7 @@ const allowedOrigins = [
   'https://api.kate0109.nomoredomainsicu.ru',
   'http://kate0109.nomoredomainsicu.ru',
   'http://api.kate0109.nomoredomainsicu.ru',
-  'localhost:3000',
+  'http://localhost:3000',
 ];
 
 app.use(cors({
